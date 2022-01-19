@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <div>
+                <canvas id="canvas-main" class="canvas-main"></canvas>
+                <div class="input-container">
+                    <div class="input-pair">
+                        <div class="custom-input">
+                            <label for="pressure">Pressure parameter</label>
+                            <input type="number" name="pressure" id="pressure" value="1000">
+                        </div>
+                        <div class="custom-input">
+                            <label for="elasticity">Elasticity coefficient</label>
+                            <input type="number" name="elasticity" id="elasticity" value="18">
+                        </div>
+                        <div class="custom-input">
+                            <label for="x_0">x_0</label>
+                            <input type="number" name="x_0" id="x_0" value="200">
+                        </div>
+                        <div class="custom-input">
+                            <label for="y_0">y_0</label>
+                            <input type="number" name="y_0" id="y_0" value="300">
+                        </div>
+                    </div>
+                    <div class="input-pair">
+                        <div class="custom-input">
+                            <label for="ball_radius">Ball Radius</label>
+                            <input type="number" name="ball_radius" id="ball_radius" value="100">
+                        </div>
+                    </div>
+                    <div class="input-pair">
+                        <div class="custom-input">
+                            <label for="number_of_particles">Number of particles</label>
+                            <input type="number" name="number_of_particles" id="number_of_particles" value="70">
+                        </div>
+                        <div class="custom-input">
+                            <label for="particle_mass">Particle mass</label>
+                            <input type="number" name="particle_mass" id="particle_mass" value="1">
+                        </div>
+                        <div class="custom-input">
+                            <label for="v_x_0">V_x_0</label>
+                            <input type="number" name="v_x_0" id="v_x_0" value="-20">
+                        </div>
+                        <div class="custom-input">
+                            <label for="v_y_0">V_y_0</label>
+                            <input type="number" name="v_y_0" id="v_y_0" value="5">
+                        </div>
+                    </div>
+                    <div class="input-pair">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="stop">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="wall.js" type="module"></script>
+        <script src="edge.js" type="module"></script>
+        <script src="point.js" type="module"></script>
+        <script src="triangle.js" type="module"></script>
+        <script src="vector.js" type="module"></script>
+        <script src="particle.js" type="module"></script>
+        <script src="spring.js" type="module"></script>
+        <script src="ball.js" type="module"></script>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
